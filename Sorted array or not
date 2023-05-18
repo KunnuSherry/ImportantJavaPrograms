@@ -1,0 +1,16 @@
+package org.example;
+public class Main{
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        boolean a = true ;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > arr[i - 1]) {
+                a = false ;
+                break;
+            }
+        if(a){
+            System.out.println("sorted");
+        }
+        else{
+            System.out.println("not sorted");
+        }
